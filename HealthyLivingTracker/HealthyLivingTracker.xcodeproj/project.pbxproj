@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67370DAD27276BDB0067EC68 /* DateTimePicker in Frameworks */ = {isa = PBXBuildFile; productRef = 67370DAC27276BDB0067EC68 /* DateTimePicker */; };
 		67656BF2270A6C7700999488 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67656BF1270A6C7700999488 /* AppDelegate.swift */; };
 		67656BF4270A6C7700999488 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67656BF3270A6C7700999488 /* SceneDelegate.swift */; };
 		67656BF6270A6C7700999488 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67656BF5270A6C7700999488 /* DashboardViewController.swift */; };
@@ -17,6 +18,9 @@
 		67656C0E270A75A900999488 /* NutritionixClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67656C0D270A75A900999488 /* NutritionixClient.swift */; };
 		67656C11270A974C00999488 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67656C10270A974C00999488 /* SettingsViewController.swift */; };
 		67656C13270A975F00999488 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67656C12270A975F00999488 /* SearchViewController.swift */; };
+		67A6CBBA27278578002FCE33 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 67A6CBB927278578002FCE33 /* Charts */; };
+		67A6CBBE27278A8E002FCE33 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A6CBBD27278A8E002FCE33 /* Color.swift */; };
+		67A6CBC127278B9E002FCE33 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67A6CBC027278B9E002FCE33 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,8 @@
 		67656C0D270A75A900999488 /* NutritionixClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionixClient.swift; sourceTree = "<group>"; };
 		67656C10270A974C00999488 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		67656C12270A975F00999488 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		67A6CBBD27278A8E002FCE33 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		67A6CBC027278B9E002FCE33 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +45,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				67656C07270A6EE900999488 /* Alamofire in Frameworks */,
+				67A6CBBA27278578002FCE33 /* Charts in Frameworks */,
+				67370DAD27276BDB0067EC68 /* DateTimePicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,38 +72,25 @@
 		67656BF0270A6C7700999488 /* HealthyLivingTracker */ = {
 			isa = PBXGroup;
 			children = (
+				67A6CBBC27278A52002FCE33 /* Extentions */,
+				67A6CBBB27278A47002FCE33 /* Model */,
+				67656BFF270A6C7800999488 /* Info.plist */,
 				67656C0C270A754F00999488 /* Networking */,
 				67656C0B270A6F4A00999488 /* SupportingFiles */,
-				67656C0A270A6F2D00999488 /* Model */,
 				67656C09270A6F1400999488 /* ViewController */,
-				67656C08270A6EFA00999488 /* Extensions */,
 				67656C0F270A791200999488 /* View */,
 			);
 			path = HealthyLivingTracker;
-			sourceTree = "<group>";
-		};
-		67656C08270A6EFA00999488 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		67656C09270A6F1400999488 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				67656BF5270A6C7700999488 /* DashboardViewController.swift */,
-				67656C10270A974C00999488 /* SettingsViewController.swift */,
 				67656C12270A975F00999488 /* SearchViewController.swift */,
+				67656C10270A974C00999488 /* SettingsViewController.swift */,
 			);
 			path = ViewController;
-			sourceTree = "<group>";
-		};
-		67656C0A270A6F2D00999488 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		67656C0B270A6F4A00999488 /* SupportingFiles */ = {
@@ -103,7 +98,6 @@
 			children = (
 				67656BF1270A6C7700999488 /* AppDelegate.swift */,
 				67656BF3270A6C7700999488 /* SceneDelegate.swift */,
-				67656BFF270A6C7800999488 /* Info.plist */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -122,8 +116,24 @@
 				67656BF7270A6C7700999488 /* Main.storyboard */,
 				67656BFC270A6C7800999488 /* LaunchScreen.storyboard */,
 				67656BFA270A6C7800999488 /* Assets.xcassets */,
+				67A6CBC027278B9E002FCE33 /* Colors.xcassets */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		67A6CBBB27278A47002FCE33 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		67A6CBBC27278A52002FCE33 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				67A6CBBD27278A8E002FCE33 /* Color.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +154,8 @@
 			name = HealthyLivingTracker;
 			packageProductDependencies = (
 				67656C06270A6EE900999488 /* Alamofire */,
+				67370DAC27276BDB0067EC68 /* DateTimePicker */,
+				67A6CBB927278578002FCE33 /* Charts */,
 			);
 			productName = HealthyLivingTracker;
 			productReference = 67656BEE270A6C7700999488 /* HealthyLivingTracker.app */;
@@ -174,6 +186,8 @@
 			mainGroup = 67656BE5270A6C7700999488;
 			packageReferences = (
 				67656C05270A6EE900999488 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				67370DAB27276BDB0067EC68 /* XCRemoteSwiftPackageReference "DateTimePicker" */,
+				67A6CBB827278578002FCE33 /* XCRemoteSwiftPackageReference "Charts" */,
 			);
 			productRefGroup = 67656BEF270A6C7700999488 /* Products */;
 			projectDirPath = "";
@@ -190,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67656BFE270A6C7800999488 /* LaunchScreen.storyboard in Resources */,
+				67A6CBC127278B9E002FCE33 /* Colors.xcassets in Resources */,
 				67656BFB270A6C7800999488 /* Assets.xcassets in Resources */,
 				67656BF9270A6C7700999488 /* Main.storyboard in Resources */,
 			);
@@ -204,6 +219,7 @@
 			files = (
 				67656C13270A975F00999488 /* SearchViewController.swift in Sources */,
 				67656BF6270A6C7700999488 /* DashboardViewController.swift in Sources */,
+				67A6CBBE27278A8E002FCE33 /* Color.swift in Sources */,
 				67656BF2270A6C7700999488 /* AppDelegate.swift in Sources */,
 				67656C0E270A75A900999488 /* NutritionixClient.swift in Sources */,
 				67656C11270A974C00999488 /* SettingsViewController.swift in Sources */,
@@ -411,6 +427,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		67370DAB27276BDB0067EC68 /* XCRemoteSwiftPackageReference "DateTimePicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/itsmeichigo/DateTimePicker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		67656C05270A6EE900999488 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -419,13 +443,31 @@
 				minimumVersion = 5.4.4;
 			};
 		};
+		67A6CBB827278578002FCE33 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		67370DAC27276BDB0067EC68 /* DateTimePicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67370DAB27276BDB0067EC68 /* XCRemoteSwiftPackageReference "DateTimePicker" */;
+			productName = DateTimePicker;
+		};
 		67656C06270A6EE900999488 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 67656C05270A6EE900999488 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		67A6CBB927278578002FCE33 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67A6CBB827278578002FCE33 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

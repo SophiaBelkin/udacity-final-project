@@ -7,23 +7,31 @@
 
 import UIKit
 
-class SearchViewController: UIViewController {
+class ResultVC: UIViewController {
+    override func viewDidLoad() {
+        view.backgroundColor = .systemBlue
+    }
+}
 
+
+class SearchViewController: UIViewController, UISearchResultsUpdating {
+    let searchController = UISearchController(searchResultsController: ResultVC())
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        title = "Search"
+        searchController.searchResultsUpdater = self
+        navigationItem.searchController = searchController
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let text = searchController.searchBar.text else {
+            return
+        }
+        
+        print(text)
     }
-    */
-
+    
 }
