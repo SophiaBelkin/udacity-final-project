@@ -9,10 +9,10 @@ import Foundation
 import Alamofire
 
 class NutritionixClient {
-    static let apiKey = ""
+    static let apiKey = "e7c5e6c8918c51bc1228282d2d725fb8"
     
     enum Endpoints {
-        static let base = ""
+        static let base = "https://www.nutritionix.com/track-api/v2/natural/nutrients"
         
         
     }
